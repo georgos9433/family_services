@@ -34,6 +34,16 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+          scrollbarTheme: ScrollbarThemeData(
+            interactive: true,
+              mainAxisMargin: 20,
+              crossAxisMargin: 2,
+              thumbVisibility: MaterialStateProperty.all(true),
+              thickness: MaterialStateProperty.all(8),
+              thumbColor: MaterialStateProperty.all(Colors.blue),
+              radius: const Radius.circular(10),
+              minThumbLength: 100,
+              )
       ),
       home: MyHomePage(
           title: 'Flutter Demo Home Page', location: currentLocation),
